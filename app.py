@@ -1,7 +1,7 @@
 import streamlit as st
 import warnings
 from dotenv import load_dotenv
-from market_research_crew.crew import MarketResearchCrew
+from src.market_research_crew.crew import MarketResearchCrew
 
 # Suppress warnings
 warnings.filterwarnings("ignore", category=SyntaxWarning, module="pysbd")
@@ -11,7 +11,7 @@ load_dotenv()
 
 # Set up the web page layout
 st.set_page_config(page_title="AI Market Research Generator", page_icon="📊", layout="wide")
-st.title("📊 AI Market Research Generator")
+st.title("AI Market Research Generator")
 st.write("Enter your AI product idea below, and our multi-agent system will generate a comprehensive business report.")
 
 # Input from the user
